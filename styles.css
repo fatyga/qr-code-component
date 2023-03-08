@@ -4,11 +4,11 @@
   --grayish-blue: hsl(220, 15%, 55%);
 	--dark-blue: hsl(218, 44%, 22%);
 
-	--br-radius-400: 1.1rem;
+	--br-radius-400: 1rem;
 	--br-radius-300: 0.6rem;
 
 	/* qr-code */
-	--qr-box-shadow: 0.4rem 0.8rem 1rem hsla(0,0%,30%,0.1);
+	--qr-box-shadow: 0 1.2rem 1.2rem hsla(0,0%,30%,0.1);
 }
 
 /*
@@ -63,7 +63,7 @@ body{
 .qr-code{
 	width: 320px;
 	max-width: 320px;
-	padding: 1rem;
+	padding: 0.9375rem;
 	background-color: var(--white);
 	border-radius: var(--br-radius-400);
 	box-shadow: var(--qr-box-shadow);
@@ -75,22 +75,22 @@ body{
 }
 
 .qr-code__headline{
-	margin: 1.6125rem 0 1.075rem 0;
+	margin: 1.6525rem 0 1.075rem 0;
 
 	color: var(--dark-blue);
 	text-align: center;
-	font-size:1.3rem;
+	font-size: 1.375rem;
 	
-	transform: scale(1.05,1.03);
-	line-height: 1.3;
+	line-height: 1.2;
 }
 
 .qr-code__hint{
+	padding-inline: 0.9375rem;
 	margin-bottom: calc(2.5125rem - 1rem);
 	color: var(--grayish-blue);
-	font-size: 0.9375rem;
+	font-size: 0.9375rem; 
 	text-align: center;
 
-	transform: scale(1.025);
 	line-height: 1.3;
+	transform: scale(1.025, 1.03);
 }
